@@ -59,9 +59,9 @@ export default {
    */
   vuetify: {
     theme: {
-      primary: colors.blue.darken1,
+      primary: '#FFDD48',
       accent: colors.grey.darken3,
-      secondary: colors.amber.darken3,
+      secondary: '#002F5D',
       info: colors.teal.lighten1,
       warning: colors.amber.base,
       error: colors.deepOrange.accent4,
