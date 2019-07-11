@@ -23,8 +23,10 @@ export default {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
-      }
-    ]
+      },
+      { rel: 'icon', href: 'https://kit.fontawesome.com/2fb78760fa.js' }
+    ],
+    script: [{ src: 'https://kit.fontawesome.com/2fb78760fa.js' }]
   },
   /*
    ** Customize the progress-bar color
@@ -41,14 +43,23 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/vuetify', '@nuxtjs/eslint-module'],
+  modules: [
+    '@nuxtjs/vuetify',
+    // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/eslint-module'
+  ],
+  /*
+   ** Axios module configuration
+   ** See https://axios.nuxtjs.org/options
+   */
+  axios: {},
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {
     theme: {
-      primary: colors.blue.darken2,
+      primary: colors.blue.darken1,
       accent: colors.grey.darken3,
       secondary: colors.amber.darken3,
       info: colors.teal.lighten1,
@@ -64,6 +75,18 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/,
+          options: {
+            fix: true
+          }
+        })
+      }
+    }
   }
 }
