@@ -1,0 +1,88 @@
+body, .crack, .navbar, .navbar-expand-lg ,.navbar-light ,.bg-light ,.crack{
+	background-color: #004D80 !important;
+	color:white;
+}
+button a{
+	text-decoration: none !important;
+	color: white !important;
+}
+
+.navbar-brand,.nav-link{
+	color:white !important;
+	font-size: 1.8em !important;
+}
+
+.nav-link:hover{
+	color:#F2BA42 !important;
+}
+
+.nav a{
+    color: white !important;
+    font-size: 3.8em !important;
+    }
+.nav li{
+    padding-right:5px;
+   }
+
+.carousel-item img{
+	height: 580 !important;
+
+}
+
+.carousel-caption{
+	background-color: rgba(0, 77, 128, .9);
+	width: 100%;
+	text-align: start;
+	margin-right: 10;
+}
+
+.peopleCarouselImg img {
+	width: auto;
+	height: 80vh;
+  }
+  .branches{
+	  display: flex;
+	  flex-direction: column;
+  }
+
+  .butto{
+	  background-color: #F2BA42;
+	  margin: 10px 10px;
+	  border: none;
+	  width: 25vw;
+  }
+  .butto:hover{
+	  background-color: #004D80;
+  }
+
+  .highlight{
+	  color: #F2BA42;
+  }
+  .highlightb{
+	color:#004D80;
+}
+
+  body{
+	font-family: Mincho;
+  }
+
+  .section{
+	 
+	 margin:2%;
+	 border:1px solid #F2BA42;
+	 font-size: 1.4em;
+	 
+	 
+  }
+  .branches h1{
+	text-align: center;
+  }
+
+  .section img{
+	 
+	  margin: 4px 10px;
+	  border:1px solid #F2BA42;
+	  height: 20vh;
+	  float: left;
+	  font-size: 1.4em;
+  }
