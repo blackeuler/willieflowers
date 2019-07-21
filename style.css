@@ -83,8 +83,7 @@ button a{
   .section img{
 	 
 	  margin: 4px 10px;
-	  
-	  height: 20vh;
-	  float: left;
+	  align-content: center;
+	  height: 40vh;
 	  font-size: 1.4em;
   }
