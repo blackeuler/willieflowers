@@ -63,7 +63,7 @@ button a{
 }
 
   body{
-	font-family: Mincho;
+	font-family: sans-serif ;
   }
 
   .section{
@@ -82,7 +82,7 @@ button a{
   .section img{
 	 
 	  margin: 4px 10px;
-	  border:1px solid #F2BA42;
+	  
 	  height: 20vh;
 	  float: left;
 	  font-size: 1.4em;
