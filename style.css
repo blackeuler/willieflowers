@@ -67,7 +67,8 @@ button a{
   }
 
   .section{
-	 
+	 text-align: justify;
+	 text-justify: auto;
 	 margin:2%;
 	 border:1px solid #F2BA42;
 	 font-size: 1.4em;
